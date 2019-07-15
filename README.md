@@ -7,14 +7,15 @@ this font & zsh configuration adds the reply logo to the available unicode chara
 
 ![screenshot of the console](misc/screen.png?raw=true "screenshot")
 
-# prerequisites
+## 🔌  prerequisites
 
-in order to take advantage of the configuration settings that come along with the patched font 
-you will need to have the zsh shell installed
+in order to take advantage of the configuration settings that come along with the patched font you will need to have the zsh shell and [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) installed
 
 `brew install zsh`
 
-# install the patched nerdfont-complete font with the reply logo
+`sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"`
+
+## 1️⃣ install the patched nerdfont-complete font with the reply logo
 
 install the fonts with the patched reply logo from the `vendor/nerdfont` directory.
 you can find the original font compilation under https://github.com/ryanoasis/nerd-fonts
@@ -22,17 +23,17 @@ you can find the original font compilation under https://github.com/ryanoasis/ne
 we used [birdfont](https://birdfont.org) to patch the logo in. the code point is encoded as `\U+FD50`.
 i should have used one of the [private use areas](https://en.wikipedia.org/wiki/Private_Use_Areas) though. if one of you finds the time to relocate the font to those ranges, a pull request will be appreciated.
 
-# change your terminal settings to the new font
+## 2️⃣ change your terminal settings to the new font
 
 e.g. the configuration settings for iterm2
 
 ![screenshot of iterm preferences](misc/iterm-preferences.png?raw=true)
 
-# install the powerlevel9k theme via homebrew
+## 3️⃣ install the powerlevel9k theme via homebrew
 
 `brew install sambadevi/powerlevel9k/powerlevel9k`
 
-# append the powerlevel zsh configuration to your own .zshrc file
+## 🆙 append the powerlevel zsh configuration to your own .zshrc file
 
 you may want to customize the zsh configuration before appending it to your own configuration file.
 our  platform developers might find the customization for aws vault useful though. other than that the configuration might inspire you for
@@ -44,7 +45,7 @@ TL;DR - i like what i see in the picture ;-)
 
 
 
-## some explanation
+### 🛠 some customization options
 
 ```zsh
 # this will display the forerunner without prompting a newline
