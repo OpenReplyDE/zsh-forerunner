@@ -20,6 +20,8 @@ in order to take advantage of the configuration settings that come along with th
 install the fonts with the patched reply logo from the `vendor/nerdfont` directory.
 you can find the original font compilation under https://github.com/ryanoasis/nerd-fonts
 
+only the _regular_ font file has been patched. the italic and bold version are in their vanilla states!
+
 we used [birdfont](https://birdfont.org) to patch the logo in. the code point is encoded as `\U+FD50`.
 i should have used one of the [private use areas](https://en.wikipedia.org/wiki/Private_Use_Areas) though. if one of you finds the time to relocate the font to those ranges, a pull request will be appreciated.
 
@@ -42,8 +44,6 @@ your own hacks. let us know what you come up with.
 TL;DR - i like what i see in the picture ;-)
 
 `cat zshrc >> ~/.zshrc`
-
-
 
 ### 🛠 some customization options
 
