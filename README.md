@@ -37,11 +37,14 @@ e.g. the configuration settings for iterm2
 
 ## 🆙 append the powerlevel zsh configuration to your own .zshrc file
 
-you may want to customize the zsh configuration before appending it to your own configuration file.
-our  platform developers might find the customization for aws vault useful though. other than that the configuration might inspire you for
-your own hacks. let us know what you come up with.
+this repo contains a `zshrc` file which contains preconfigured, helpful configuration, check it out.
+you may want to customize this `zshrc` configuration before appending it to your own configuration file.
+our  platform developers might find the customization for aws vault useful though.
+other than that the configuration might inspire you for your own hacks. let us know what you come up with.
 
 TL;DR - i like what i see in the picture ;-)
+
+enter following line to append the content of the `zshrc` file to your config.
 
 `cat zshrc >> ~/.zshrc`
 
@@ -50,13 +53,17 @@ TL;DR - i like what i see in the picture ;-)
 ```zsh
 # this will display the forerunner without prompting a newline
 POWERLEVEL9K_CUSTOM_OPENREPLY="echo -n '\ufd50'"
+
 # the color of the forerunner
 POWERLEVEL9K_CUSTOM_OPENREPLY_FOREGROUND="black"
+
 # change this to your reply companies color approximation
 # e.g. see this site for valid options https://jonasjacek.github.io/colors/
 POWERLEVEL9K_CUSTOM_OPENREPLY_BACKGROUND="aquamarine1"
-# this is optional. configure it as you see fit.
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status ip battery)
+
+# this is optional. configure it as you see fit. we preconfigured python virtuelenv to be displayed when activated.
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status virtualenv ip battery)
+
 # the only important part here is the custom_openreply section. the others are optional.
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(custom_openreply custom_awsprofile ssh dir vcs)
 ```
