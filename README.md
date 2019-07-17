@@ -38,9 +38,6 @@ e.g. the configuration settings for iterm2
 ## 🆙 append the powerlevel zsh configuration to your own .zshrc file
 
 this repo contains a `zshrc` file which contains preconfigured, helpful configuration, check it out.
-you may want to customize this `zshrc` configuration before appending it to your own configuration file.
-our  platform developers might find the customization for aws vault useful though.
-other than that the configuration might inspire you for your own hacks. let us know what you come up with.
 
 TL;DR - i like what i see in the picture ;-)
 
